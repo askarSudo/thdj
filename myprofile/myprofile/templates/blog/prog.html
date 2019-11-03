@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block titel %}Программы{% endblock %}
+
+
+
+{% block content %}
+<div class='main_block_prog'>
+	
+        {% if last_program %}
+            
+            {% for a in last_program %}
+
+                    <div class='text_block'>
+
+                    	<div style="height: 1vw;"></div>
+
+                	    <a class='Name_program'  >{{a.program_name}}</a>
+
+                	    <div style="height: 1vw;"></div>
+
+                        <pre class='text_area'>{{a.program_text}}</pre> 
+
+                    </div>              
+
+            {% endfor %}
+
+    	
+        {% endif %}
+</div>
+{% endblock %}
+

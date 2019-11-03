@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+	<title>{% block titel %}Главная{% endblock %}</title>
+
+</head>
+<body>
+
+		<div class="menu">
+			<div class='main_box_centrl'>
+				<a class='glo' href="/" style="margin:2vw 1.5vw; " >Главная</a>
+			</div>
+
+			<div class='main_box_centrl'>
+				<a class='glo' href="/опыт" style="margin:2vw 1.5vw; " >Мой опыт</a>
+			</div>
+
+			<div class='main_box_centrl'>
+				<a class='glo' href="/учебники" style="margin:2vw 1.5vw;">Литература</a>
+			</div>
+
+			<div class='main_box_centrl'>
+				<a class='glo' href="/музыка" style="margin:2vw 1.5vw;">Музыка</a>
+			</div>
+
+			<div class='main_box_centrl'>
+				<a class='glo' href="/программы" style="margin:2vw 1.5vw;">Программы</a> 
+			</div>
+	    </div>
+
+		
+	    {% block content %}{% endblock %}
+	    
+
+
+
+</body>
+
+<div class="inf"></div>
+
+</html>

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block titel %}Опыт работы{% endblock %}
+
+
+
+{% block content %}
+<div class="main_block_prog_work">
+	{% if last_works %}
+
+	    {% for a in last_works %}
+
+		    {% if a.id == 1 %}
+		        <a >{{a.my_works}}</a>
+		    {% endif %}
+
+		{% endfor %}
+
+    {% endif %}  
+</div>    
+
+{% endblock %}
+

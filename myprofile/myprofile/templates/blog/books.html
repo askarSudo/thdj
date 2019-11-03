@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block titel %}Учебники{% endblock %}
+
+
+
+{% block content %}
+<div class="main_block_books">
+
+	<div style="height: 3vw;"></div>
+
+		{% for a in books %}
+		<div style=" font-size:  0px;display: inline-block; ">
+			<div class='book_block' style=" font-size:  1.7vw ;">
+				<img class='img_bock' src="{{ MEDIA_URL }}{{ a.book_img.url }}">
+				<a class='btn2' href="{{a.linck_book}}">Смотреть {{a.books_name}}</a>
+			</div>
+		</div>
+		{% endfor %}
+
+	<div style="height: 4vw;"></div>
+
+</div>    
+
+{% endblock %}
+

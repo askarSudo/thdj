@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block titel %}Музыка{% endblock %}
+
+
+
+{% block content %}
+<div class="main_block">
+<div style="height: 3vw;"></div>
+<div style="margin-left:10%;">
+	<div class='audio_block'>
+		<a>Рафик Сальманов - Шыршы купшы кейенган</a>
+		<audio src="/media/a1.mp3" controls></audio>
+		<a>Ямгыр уйнарга сакыра</a>
+		<audio src="/media/a2.mp3" controls></audio>
+		<a>Детские Татарские - Ак куян</a>
+		<audio src="/media/a3.mp3" controls></audio>
+		<a>балалар-юльтуртту</a>
+		<audio src="/media/a4.mp3" controls></audio>
+	</div>
+</div>
+</div>
+{% endblock %}
+

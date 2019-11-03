@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block titel %}Главная{% endblock %}
+
+
+
+{% block content %}
+
+<div class='main_block'>
+	<div class='img'>
+		{% if hai %}
+
+		    {% for a in hai %}
+
+			    {% if a.id == 1 %}
+			        <a class='hello_name' >{{a.hello_name}}</a>
+			        <pre class='hello_text'>{{a.hello_text}}</pre>
+			    	<img  class='avatar' src="{{ MEDIA_URL }}{{ a.my_img.url }}">
+			    {% endif %}
+
+			{% endfor %}
+
+	    {% endif %}  
+	    <div style="height: 35vw;"></div>
+	</div>
+</div>
+
+{% endblock %}
+
